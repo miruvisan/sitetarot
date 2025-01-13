@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw your future!</title>
+    <link rel="stylesheet" href="reading.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bottom-nav">
+            <a href="main.html">Home</a>
+            <a href="major-arcana.html">Major Arcana</a>
+            <a href="reading.html">Tarot Reading</a>
+            <div class="dropup">
+                <button class="upbuton">Minor Arcana
+                    <i class="fa fa-caret-up"></i>
+                </button>
+                <div class="dropup-content">
+                    <a href="wands.html">Wands</a>
+                    <a href="cups.html">Cups</a>
+                    <a href="swords.html">Swords</a>
+                    <a href="pentacles.html">Pentacles</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container2">
+        <div class="reading-info">
+            <h3 id="reading-type"></h3> 
+            <div id="card-meanings">
+                <p id="card1-meaning"></p>
+                <p id="card2-meaning"></p>
+                <p id="card3-meaning"></p>
+            </div>
+            
+            <div class="card-back-images">
+                <img id="card1" src="tarot-back.png" alt="Card 1" class="card-back">
+                <img id="card2" src="tarot-back.png" alt="Card 2" class="card-back">
+                <img id="card3" src="tarot-back.png" alt="Card 3" class="card-back">
+            </div>
+            
+            <button id="generate-cards">Generate Cards</button>            
+        
+            <div class="card-images-container" id="card-images-container"></div>
+        </div>
+        
+    </div>
+
+    <script src="readingreal.js"></script>
+
+</body>
+
+</html>

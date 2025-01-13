@@ -1,0 +1,25 @@
+{
+    "reading": {
+      "reading1": {
+        "card1": "Something to let go of & forgive from yesterday.",
+        "card2": "A piece of advice on navigating today.",
+        "card3": "Something to hold space for today."
+      },
+      "2": {
+        "card1": "Your current situation.",
+        "card2": "Something you should do.",
+        "card3": "Something you shouldn't do."
+      },
+      "3": {
+        "card1": "Summary of today.",
+        "card2": "What do I need to let go of from today?",
+        "card3": "What should I take with me for tomorrow?"
+      },
+      "4": {
+        "card1": "What do I need to know today?",
+        "card2": "What do I need to do today?",
+        "card3": "What do I need to release today?"
+      }
+    }
+  }
+  

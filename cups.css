@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 130px;
+    align-items: stretch;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Georgia', serif;
+    overflow-y: auto;
+    flex-direction: row;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.bottom-nav {
+    background-color: #7fe9e5;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    align-self: last baseline;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.bottom-nav a {
+    color: #000000;
+    text-align: center;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 20px;
+}
+
+.bottom-nav a:hover {
+    background-color: #54d2e6;
+}
+
+@media screen and (max-width: 600px) {
+    .bottom-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottom-nav a {
+        flex: 1;
+    }
+}
+
+.dropup {
+    position: relative;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    display: inline-block;
+}
+
+.dropup .upbuton {
+    background-color: #7fe9e5;
+    color: black;
+    padding: 14px 16px;
+    font-size: 20px;
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.dropup-content {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropup-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropup-content a:hover {
+    background-color: rgb(215, 241, 250);
+}
+
+.dropup:hover .dropup-content {
+    display: block;
+}
+
+.cards-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    gap: 10px;
+    bottom: 50px;
+    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+    overflow-y: auto;
+    box-sizing: content-box;
+}
+
+.ace,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.ten,
+.page,
+.knight,
+.queen,
+.king {
+    width: 266px;
+    height: 444px;
+    position: relative;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.ace:hover,
+.two:hover,
+.three:hover,
+.four:hover,
+.five:hover,
+.six:hover,
+.seven:hover,
+.eight:hover,
+.nine:hover,
+.ten:hover,
+.page:hover,
+.knight:hover,
+.queen:hover,
+.king:hover {
+    transform: scale(1.05);
+}
+
+.ace:hover .overlay,
+.two:hover .overlay,
+.three:hover .overlay,
+.four:hover .overlay,
+.five:hover .overlay,
+.six:hover .overlay,
+.seven:hover .overlay,
+.eight:hover .overlay,
+.nine:hover .overlay,
+.ten:hover .overlay,
+.page:hover .overlay,
+.knight:hover .overlay,
+.queen:hover .overlay,
+.king:hover .overlay {
+    opacity: 1;
+}
+
+.image {
+    display: block;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.image {
+    display: grid;
+    border-radius: 20px;
+    width: inherit;
+    height: inherit;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: inherit;
+    height: inherit;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.text {
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    padding: 1em;
+}
+
+.p,
+.li {
+    text-align: left;
+}
+
+.i {
+    align-self: center;
+}
+.anim{
+    position: fixed;
+    width: 127px;
+    height: 219px;
+    top: 0;
+    left: 0;
+    justify-self:first baseline;
+    z-index: -1;
+    animation: miau 14s ease-in-out infinite;
+}
+
+@keyframes miau {
+    0% {
+        left: 0%;
+    }
+    50%{
+        left: 100%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+.animatie{
+    width: 127px;
+    height: 219px;
+}
