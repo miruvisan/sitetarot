@@ -143,6 +143,7 @@ function generateRandomCards() {
         imgElement.style.width = "250px";
         imgElement.style.height = "431px";
         imgElement.style.objectFit = "cover";
+        imgElement.style.placeSelf = "center";
 
         const cardMeaning = document.getElementById(`card${index + 1}-meaning`);
         cardMeaning.textContent = card.meaning;

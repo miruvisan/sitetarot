@@ -126,3 +126,28 @@ body {
     transform: scale(1.05);  
 }
 
+
+#generate-cards {
+    background: linear-gradient(45deg, #ff8a00, #e52e71); 
+    color: #fff; 
+    border: none; 
+    border-radius: 8px; 
+    padding: 15px 30px; 
+    font-size: 18px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+#generate-cards:hover {
+    background: linear-gradient(45deg, #e52e71, #ff8a00); 
+    transform: scale(1.05); 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); 
+}
+
+#generate-cards:focus {
+    outline: 2px solid #e52e71;
+    outline-offset: 4px;
+}
