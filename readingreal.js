@@ -141,7 +141,7 @@ function generateRandomCards() {
         imgElement.alt = `Tarot Card ${index + 1}`;
 
         imgElement.style.width = "250px";
-        imgElement.style.height = "400px";
+        imgElement.style.height = "431px";
         imgElement.style.objectFit = "cover";
 
         const cardMeaning = document.getElementById(`card${index + 1}-meaning`);
