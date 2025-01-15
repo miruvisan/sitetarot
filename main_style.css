@@ -265,3 +265,8 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 9999;
 }
+
+.clicked {
+  background-color: rgb(223, 190, 239);
+  border-color: rgb(74, 9, 97);
+}
