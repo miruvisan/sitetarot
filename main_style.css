@@ -176,7 +176,6 @@ main {
   padding: 0.5em 1em;
 }
 
-/* General popup container styling */
 #newsletter-popup {
   display: none;
   position: fixed;
@@ -193,7 +192,6 @@ main {
   font-family: 'Arial', sans-serif;
 }
 
-/* Popup overlay */
 #popup-overlay {
   display: none;
   position: fixed;
@@ -205,7 +203,6 @@ main {
   z-index: 999;
 }
 
-/* Form elements */
 #newsletter-popup h3 {
   font-size: 24px;
   color: #333;
@@ -227,7 +224,6 @@ main {
   font-size: 14px;
 }
 
-/* Buttons */
 #newsletter-popup button {
   padding: 10px 20px;
   font-size: 16px;
