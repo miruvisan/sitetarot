@@ -101,7 +101,7 @@ function generateRandomCards() {
         { image: "cards/2-the-high-priestess.jpg", meaning: "The High Priestess: Reflects intuition, inner wisdom, and the mysteries of the subconscious." },
         { image: "cards/3-the-empress.jpg", meaning: "The Empress: Symbolizes abundance, nurturing, and fertility." },
         { image: "cards/4-the-emperor.jpg", meaning: "The Emperor: Represents authority, structure, and leadership." },
-        { image: "cards/5-the-hierophant.jpg", meaning: "The Hierophant: Reflects tradition, spiritual guidance, and conformity." },
+        { image: "cards/5-the-heirophant.jpg", meaning: "The Hierophant: Reflects tradition, spiritual guidance, and conformity." },
         { image: "cards/6-the-lovers.jpg", meaning: "The Lovers: Symbolizes love, union, and important choices." },
         { image: "cards/7-the-chariot.jpg", meaning: "The Chariot: Represents determination, willpower, and victory over obstacles." },
         { image: "cards/8-strength.jpg", meaning: "Strength: Reflects courage, inner strength, and the ability to overcome challenges." },
