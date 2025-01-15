@@ -81,19 +81,17 @@
                 </div>
             </li>
         </ul>
-        <div id="newsletter-popup" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,
-        -50%); padding:20px; background:#fff; box-shadow:0 4px 6px rgba(0,0,0,0.1); z-index:1000;">
+        <div id="newsletter-popup" >
         <h3>Subscribe to our Newsletter</h3>
         <form id="newsletter-form">
             <label for="email">Email:</label><br>
             <input type="text" id="email" name="email" required><br><br>
-            <button type="submit" style="padding:10px 20px; font-size:16px;">Subscribe</button>
-            <button type="button" id="close-popup" style="padding:10px 20px; font-size:16px; justify-self: flex-end;">Close</button>
+            <button type="submit" id="submit-popup">Subscribe</button>
+            <button type="button" id="close-popup">Close</button>
         </form>
-        <p id="form-message" style="color:rgb(151, 40, 165); display:none;"></p>
+        <p id="form-message"></p>
         </div>
-        <div id="popup-overlay"
-            style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:999;">
+        <div id="popup-overlay">
         </div>
         <script src="popup.js"></script>
     </main>

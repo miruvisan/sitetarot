@@ -176,7 +176,35 @@ main {
   padding: 0.5em 1em;
 }
 
-.popup{
+#newsletter-popup{
+  display:none; 
+  position:fixed; 
+  top:50%; 
+  left:50%; 
+  transform:translate(-50%,-50%);
+  padding:20px; 
+  background:#fff; 
+  box-shadow:0 4px 6px rgba(0,0,0,0.1); 
+  z-index:1000;
+}
+
+#submit-popup{
+  padding:10px 20px; 
+  font-size:16px;
+}
+
+#close-popup{
+  padding:10px 20px; 
+  font-size:16px;
+  justify-self: flex-end;
+}
+
+#form-message{
+  color:rgb(151, 40, 165); 
+  display:none;
+}
+
+#popup-overlay{
   display:none; 
   position:fixed; 
   top:0; 
