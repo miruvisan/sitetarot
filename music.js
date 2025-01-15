@@ -1,13 +1,23 @@
 const backgroundMusic = new Audio('meditation-audio.mp3'); 
-backgroundMusic.loop = true;
+backgroundMusic.loop = true; 
 
-const musicState = localStorage.getItem('musicOn') === 'true';
+if (!backgroundMusic.canPlayType('audio/mpeg')) {
+    console.error('Audio format is not supported. Please use a supported format like MP3 or OGG.');
+}
 
-if (musicState) backgroundMusic.play();
+let musicState = localStorage.getItem('musicOn') === 'true';
+
+if (musicState) {
+    backgroundMusic.play().catch((err) => {
+        console.error('Autoplay blocked:', err);
+    });
+}
 
 function toggleMusic() {
     if (backgroundMusic.paused) {
-        backgroundMusic.play();
+        backgroundMusic.play().catch((err) => {
+            console.error('Error playing music:', err);
+        });
         localStorage.setItem('musicOn', 'true');
     } else {
         backgroundMusic.pause();
@@ -23,10 +33,9 @@ document.addEventListener('keydown', (e) => {
 
 function showMusicPopup() {
     const popup = document.createElement('div');
+    popup.id = 'music-popup';
     popup.innerHTML = `
-        <div style="position: fixed; bottom: 20px; right: 20px; padding: 10px 15px; background: rgba(0, 0, 0, 0.8); color: white; border-radius: 5px; font-family: Arial, sans-serif; font-size: 14px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); z-index: 9999;">
-            Press "M" to toggle background music.
-        </div>
+        <p>Press "M" to toggle background music.</p>
     `;
     document.body.appendChild(popup);
 
