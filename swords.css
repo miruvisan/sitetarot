@@ -100,7 +100,7 @@ body {
 .cards-container {
     display: inline-flex;
     flex-wrap: wrap;
-    justify-content: stretch;
+    justify-content: space-evenly;
     gap: 10px;
     bottom: 50px;
     padding: 10px;
@@ -232,4 +232,18 @@ body {
 .animatie{
     width: 127px;
     height: 219px;
+}
+
+#music-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
 }
