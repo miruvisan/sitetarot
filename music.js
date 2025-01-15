@@ -1,14 +1,10 @@
-// Background music setup
-const backgroundMusic = new Audio('your-music-file.mp3'); // Replace with your music file
-backgroundMusic.loop = true; // Loop the music
+const backgroundMusic = new Audio('meditation-audio.mp3'); 
+backgroundMusic.loop = true;
 
-// Retrieve saved state from localStorage
 const musicState = localStorage.getItem('musicOn') === 'true';
 
-// Set initial music state
 if (musicState) backgroundMusic.play();
 
-// Toggle music function
 function toggleMusic() {
     if (backgroundMusic.paused) {
         backgroundMusic.play();
@@ -19,14 +15,12 @@ function toggleMusic() {
     }
 }
 
-// Listen for "M" key press
 document.addEventListener('keydown', (e) => {
     if (e.key.toLowerCase() === 'm') {
         toggleMusic();
     }
 });
 
-// Show popup with instructions
 function showMusicPopup() {
     const popup = document.createElement('div');
     popup.innerHTML = `
@@ -36,9 +30,7 @@ function showMusicPopup() {
     `;
     document.body.appendChild(popup);
 
-    // Remove popup after 5 seconds
     setTimeout(() => popup.remove(), 5000);
 }
 
-// Display popup when the page loads
 window.addEventListener('load', showMusicPopup);
