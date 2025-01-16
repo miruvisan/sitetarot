@@ -81,15 +81,16 @@
                 </div>
             </li>
         </ul>
-        <div id="newsletter-popup" >
-        <h3>Subscribe to our Newsletter</h3>
-        <form id="newsletter-form">
-            <label for="email">Email:</label><br>
-            <input type="text" id="email" name="email" required><br><br>
-            <button type="submit" id="submit-popup">Subscribe</button>
-            <button type="button" id="close-popup">Close</button>
-        </form>
-        <p id="form-message"></p>
+        <div id="newsletter-popup">
+            <h3>Subscribe to our Newsletter</h3>
+            <form id="newsletter-form">
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email"
+                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"><br><br>
+                <button type="submit" id="submit-popup">Subscribe</button>
+                <button type="button" id="close-popup">Close</button>
+            </form>
+            <p id="form-message"></p>
         </div>
         <div id="popup-overlay">
         </div>
