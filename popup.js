@@ -46,7 +46,3 @@ document.getElementById('form-message').style.display = 'block';
 setTimeout(hidePopup, 2000);
 });
 
-document.querySelector('#submit-popup').addEventListener('click', (e) => {
-    e.target.classList.add('clicked');
-});
-setTimeout(showPopup, 3000); 
